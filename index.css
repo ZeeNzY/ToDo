@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+  }
+  body {
+    background-image: linear-gradient(120deg, #dfbb45, #fda085);
+    color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+  }
+  header {
+    font-size: 1.5rem;
+  }
+  header,
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  input,
+  button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: None;
+    background: white;
+  }
+  button {
+    color: #fda085;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: #fda085;
+    color: whitesmoke;
+  }
+  
+  .todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #todo-list {
+    min-width: 30%;
+    list-style: none;
+  }
+  
+  .todo {
+    margin: 0.5rem;
+    background: whitesmoke;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease-in;
+    text-overflow: ellipsis;
+  }
+  
+  .todo li {
+    flex: 1;
+    text-overflow: clip;
+  }
+  
+  .del-btn,
+  .complete-btn {
+    background: #f14212;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .complete-btn {
+    background: rgb(50, 221, 50);
+  }
+  
+  .fall{
+      transform: translateY(8rem) rotateZ(20deg);
+      opacity: 0;
+  }
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+    background: rgb(54, 212, 75);
+  }
+  
+
+
